@@ -6,5 +6,9 @@
     "Rmpef",
     "signin",
     "Womens"
-  ]
+  ],
+  "errorLens.statusBarIconsEnabled": false,
+  "errorLens.fontStyleItalic": false,
+  "errorLens.enabled": true,
+  "errorLens.enableOnDiffView": false
 }
