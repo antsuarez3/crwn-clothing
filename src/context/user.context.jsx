@@ -24,5 +24,9 @@ export const UserProvider = ({ children }) => {
     return unsubscribe
   }, [])
 
-  return <UserContext.Provider value={value}>{children}</UserContext.Provider>
+  return (
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    <UserContext.Provider value={value}>{children}</UserContext.Provider>
+  )
 }
