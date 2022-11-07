@@ -8,8 +8,8 @@ import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component
 // @ts-ignore
 import { UserContext } from '../../context/user.context'
 import { CartContext } from '../../context/cart.context'
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
 
+import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
 import { signOutUser } from '../../utils/firebase/firebase.utils'
 
 import './navigation.styles.scss'
@@ -28,6 +28,7 @@ const Navigation = () => {
           <Link className='nav-link' to='/shop'>
             SHOP
           </Link>
+          
           {currentUser ? (
             <span className='nav-link' onClick={signOutUser}>
               SIGN OUT
