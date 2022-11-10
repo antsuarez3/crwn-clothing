@@ -1,17 +1,13 @@
 import React, { Fragment, useContext } from 'react'
 import { Outlet, Link } from 'react-router-dom'
-
 import CartIcon from '../../components/cart-icon/cart-icon.component'
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component'
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import { UserContext } from '../../context/user.context'
 import { CartContext } from '../../context/cart.context'
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
 import { signOutUser } from '../../utils/firebase/firebase.utils'
-
 import './navigation.styles.scss'
 
 const Navigation = () => {
@@ -28,7 +24,7 @@ const Navigation = () => {
           <Link className='nav-link' to='/shop'>
             SHOP
           </Link>
-          
+
           {currentUser ? (
             <span className='nav-link' onClick={signOutUser}>
               SIGN OUT
